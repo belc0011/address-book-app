@@ -2,15 +2,91 @@
     "contacts": [
       {
         "id": 1,
-        "name": "Woody",
-        "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-        "likes": 8
+        "name": "Bryan Garcia",
+        "nickname": "husband",
+        "phone number": "480-123-4567",
+        "favorite": true,
+        "group": "family"
       },
       {
         "id": 2,
-        "name": "Buzz Lightyear",
-        "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-        "likes": 14
+        "name": "Laura Belcourt",
+        "nickname": "mom",
+        "phone number": "480-285-1234",
+        "favorite": true,
+        "group": "family"
+      },
+      {
+        "id": 3,
+        "name": "Craig Belcourt",
+        "nickname": "dad",
+        "phone number": "480-285-5678",
+        "favorite": true,
+        "group": "family"
+      },
+      {
+        "id": 4,
+        "name": "Elijah Garcia",
+        "nickname": "eldest",
+        "phone number": "480-987-6543",
+        "favorite": true,
+        "group": "family"
+      },
+      {
+        "id": 5,
+        "name": "Noah Garcia",
+        "nickname": "youngest",
+        "phone number": "480-567-1234",
+        "favorite": true,
+        "group": "family"
+      },
+      {
+        "id": 6,
+        "name": "Valerie Swenson",
+        "nickname": "sister",
+        "phone number": "612-123-4567",
+        "favorite": true,
+        "group": "family"
+      },
+      {
+        "id": 7,
+        "name": "Nancy Hart",
+        "nickname": "mother-in-law",
+        "phone number": "612-987-6543",
+        "favorite": false,
+        "group": "in-laws"
+      },
+      {
+        "id": 8,
+        "name": "Abby Swenson",
+        "nickname": "niece",
+        "phone number": "480-555-5555",
+        "favorite": false,
+        "group": "family"
+      },
+      {
+        "id": 9,
+        "name": "Megan Ament",
+        "nickname": "dept head",
+        "phone number": "480-480-4800",
+        "favorite": false,
+        "group": "coworkers"
+      },
+      {
+        "id": 10,
+        "name": "Allyson Wellman",
+        "nickname": "team lead",
+        "phone number": "480-000-1111",
+        "favorite": false,
+        "group": "coworkers"
+      },
+      {
+        "id": 11,
+        "name": "Robert Hart",
+        "nickname": "bob",
+        "phone number": "612-480-0000",
+        "favorite": false,
+        "group": "in-laws"
       }
     ]
   }
