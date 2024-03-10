@@ -13,6 +13,9 @@ function NavBar() {
             <div>
                 <NavLink to="/favorites" className="nav-link">Favorites</NavLink>
             </div>
+            <div>
+                <NavLink to="/form" className="nav-link">Add Contact</NavLink>
+            </div>
         </nav>
     )
 }
