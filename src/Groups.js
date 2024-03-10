@@ -28,6 +28,24 @@ function Groups() {
                         )
                     })}
                 </div>
+                <h2>Co-Workers</h2>
+                <div>
+                    {groupContacts.filter(contact => contact.group === "coworkers")
+                  .map(contact => {
+                    return (
+                        <ContactCard name={contact.name} phone={contact.phone} nickname={contact.nickname} favorite={contact.favorite} key={contact.id} group={contact.group}/>
+                    )
+                })}
+                </div>
+                <h2>In-Laws</h2>
+                <div>
+                    {groupContacts.filter(contact => contact.group === "in-laws")
+                .map(contact => {
+                    return (
+                        <ContactCard name={contact.name} phone={contact.phone} nickname={contact.nickname} favorite={contact.favorite} key={contact.id} group={contact.group}/>
+                    )
+                })}
+                </div>
             </main>
         </div>
     )

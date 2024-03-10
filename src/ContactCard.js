@@ -8,7 +8,7 @@ function ContactCard ( {name, phone, nickname, favorite, group}) {
             <ul>
                 <li>"{nickname}"</li>
                 <li>Phone: {phone}</li>
-                <Link to="/groups">{group}</Link>
+                <Link to="/groups">Group: {group}</Link>
             </ul>
         </div>
     )
