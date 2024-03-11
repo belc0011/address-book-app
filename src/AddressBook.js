@@ -1,21 +1,14 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import ContactCard from "./ContactCard.js";
 import NavBar from "./NavBar.js";
+import { ContactContext } from "./MyContext.js";
 
-function AddressBook() {
-    const [contacts, setContacts] = useState([]);
-    useEffect(() => {
-        fetch("http://localhost:3000/contacts")
-        .then(res => res.json())
-        .then(data => setContacts(data))
-        .catch(error => console.error(error));
-    }, [])
+function AddressBook( ) {
+    const { contacts } = useContext(ContactContext);
+    console.log(contacts);
     return (
         <div>
-            <header>
-                <NavBar />
-            </header>
             <main>
                 <h1>Address Book</h1>
                 {contacts.map(contact => {

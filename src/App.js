@@ -3,17 +3,27 @@ import './App.css';
 import NavBar from './NavBar';
 import AddressBook from './AddressBook';
 import Groups from './Groups';
+import {useState, useEffect} from'react';
+import Favorites from './Favorites';
+import { ContactProvider } from './MyContext';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ErrorPage from './ErrorPage';
+import Form from './Form';
 
 function App() {
-  
+
   return (
-    <div className="App">
-      <header>
+    <Router>
+      <ContactProvider>
         <NavBar />
-      </header>
-      <AddressBook />
-      <Groups />
-    </div>
+        <div className="app">
+          <Routes>
+            <Route path="/" element={<AddressBook />} />
+            <Route path="/groups" element={<Groups />} />
+          </Routes>
+        </div>
+      </ContactProvider>
+    </Router>
   );
 }
 

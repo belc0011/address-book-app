@@ -32,7 +32,23 @@ function Form() {
 
     function handleSubmit(e) {
         e.preventDefault();
-        <ContactCard name={name} phone={phone} nickname={nickname} group={group} favorite={favorite}/>
+        fetch('http://localhost:3000/contacts', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                name: name,
+                phone: phone,
+                nickname: nickname,
+                group: group,
+                favorite: favorite
+            })
+        })
+        .then(res => res.json())
+        .then(data => console.log(data))
+        e.target.reset();
+        alert('Contact added!');
     }
     return (
         <div>

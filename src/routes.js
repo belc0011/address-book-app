@@ -4,29 +4,36 @@ import Groups from './Groups';
 import ErrorPage from './ErrorPage';
 import Favorites from './Favorites';
 import Form from './Form';
+import App from './App';
 
 const routes = [
-    {
-        path: "/",
+  {
+    path: '/',
+    element: <App />,
+    children: [
+      {
+        path: '',
         element: <AddressBook />,
         errorElement: <ErrorPage />
-      }, 
+      },
       {
-        path: "/groups",
+        path: '/groups',
         element: <Groups />,
         errorElement: <ErrorPage />
       },
       {
-        path: "/favorites",
+        path: '/favorites',
         element: <Favorites />,
         errorElement: <ErrorPage />
       },
       {
-        path: "/form",
+        path: '/form',
         element: <Form />,
         errorElement: <ErrorPage />
-      },
-    ];
+      }
+    ]
+  }
+];
     
     export default routes;
     
