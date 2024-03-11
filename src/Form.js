@@ -1,7 +1,8 @@
 import React from 'react';
 import NavBar from './NavBar';
-import { useEffect, useState} from'react';
+import { useEffect, useState, useContext} from'react';
 import ContactCard from './ContactCard';
+import { ContactContext } from "./MyContext.js";
 
 function Form() {
     const [name, setName] = useState('');
@@ -9,7 +10,8 @@ function Form() {
     const [nickname, setNickname] = useState('');
     const [group, setGroup] = useState('');
     const [favorite, setFavorite] = useState('');
-    
+    const { setContacts } = useContext(ContactContext);
+
     function handleName(e) {
         setName(e.target.value);
     }
@@ -31,19 +33,20 @@ function Form() {
     }
 
     function handleSubmit(e) {
+        const newContact = {
+            name: name,
+            phone: phone,
+            nickname: nickname,
+            group: group,
+            favorite: favorite
+        }
         e.preventDefault();
         fetch('http://localhost:3000/contacts', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({
-                name: name,
-                phone: phone,
-                nickname: nickname,
-                group: group,
-                favorite: favorite
-            })
+            body: JSON.stringify(newContact)
         })
         .then(res => res.json())
         .then(data => console.log(data))
@@ -52,9 +55,6 @@ function Form() {
     }
     return (
         <div>
-            <header>
-                <NavBar />
-            </header>
             <main>
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="name">Name</label>
@@ -72,6 +72,7 @@ function Form() {
                     <label htmlFor="group">Group</label>
                     <div>
                         <select type="dropdown" id="group" onChange={handleGroup}>
+                            <option value="default">Select One</option>
                             <option value="friends">Friends</option>
                             <option value="family">Family</option>
                             <option value="in-laws">In-Laws</option>
@@ -82,6 +83,7 @@ function Form() {
                     <label htmlFor="favorite">Favorite?</label>
                     <div>
                     <select type="dropdown" id="favorite" onChange={handleFavorite}>
+                        <option value="default">Select One</option>
                         <option value="true">Yes</option>
                         <option value="false">No</option>
                     </select>

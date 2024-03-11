@@ -20,6 +20,8 @@ function App() {
           <Routes>
             <Route path="/" element={<AddressBook />} />
             <Route path="/groups" element={<Groups />} />
+            <Route path="/favorites" element={<Favorites />} />
+            <Route path="/form" element={<Form />} />
           </Routes>
         </div>
       </ContactProvider>

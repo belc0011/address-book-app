@@ -36,7 +36,16 @@ function Groups() {
                         <ContactCard name={contact.name} phone={contact.phone} nickname={contact.nickname} favorite={contact.favorite} key={contact.id} group={contact.group}/>
                     )
                 })}
-            </div>
+                </div>
+                <h2>Friends</h2>
+                <div>
+                    {contacts.filter(contact => contact.group === "friends")
+                    .map(contact => {
+                        return (
+                            <ContactCard name={contact.name} phone={contact.phone} nickname={contact.nickname} favorite={contact.favorite} key={contact.id} group={contact.group}/>
+                        )
+                    })}
+                </div>
             </main>
         </div>
     )

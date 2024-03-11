@@ -111,6 +111,14 @@
       "group": "in-laws",
       "favorite": "false",
       "id": 14
+    },
+    {
+      "name": "Kristen Bauerschmidt",
+      "phone": "480-777-7777",
+      "nickname": "Kristen",
+      "group": "friends",
+      "favorite": "false",
+      "id": 15
     }
   ]
 }
