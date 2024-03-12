@@ -10,7 +10,7 @@ function Groups() {
         <div>
             <main>
                 <h1 className="parent">Groups</h1>
-                <em>Favorite contacts are listed in blue</em>
+                <em>Favorite contacts are listed in green</em>
                 <div className="child">
                 <h2>Family</h2>
                     {contacts.filter(contact => contact.group === "family")

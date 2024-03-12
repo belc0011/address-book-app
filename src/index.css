@@ -31,7 +31,7 @@ code {
 
 h1{text-align: center}
 
-h3{color: blue}
+h3{color: green}
 
 #main-heading{text-align: center}
 
@@ -45,4 +45,27 @@ h3{color: blue}
   display: inline-block;
   padding: 1rem 1rem;
   vertical-align: top;
+}
+
+form{
+  text-align: center;
+}
+
+form label {
+  display: block; 
+  margin-bottom: 10px; 
+  margin-top: 10px;
+}
+
+form textarea {
+  width: 100%; /* Make input fields and textarea full width */
+  padding: 8px; /* Add padding to input fields and textarea */
+  margin-bottom: 15px; /* Add margin between each input field and the next element */
+}
+
+form input[type="submit"] {
+  width: auto; /* Make submit button width auto to fit content */
+  padding: 10px 20px; /* Add padding to submit button */
+  margin-top: 15px; /* Add margin between last input field and submit button */
+  display: block; /* Ensure the button is displayed as a block element */
 }

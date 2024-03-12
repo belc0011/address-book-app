@@ -64,6 +64,7 @@ function Form() {
     return (
         <div>
             <main>
+                <h1>Add a New Contact</h1>
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="name">Name</label>
                     <div>
@@ -96,7 +97,10 @@ function Form() {
                         <option value="false">No</option>
                     </select>
                     </div>
-                    <button type="submit">Submit</button>
+                    <div>
+                        <p></p>
+                        <button type="submit">Submit</button>
+                    </div>
                 </form>
             </main>
         </div>
