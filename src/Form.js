@@ -10,7 +10,7 @@ function Form() {
     const [nickname, setNickname] = useState('');
     const [group, setGroup] = useState('');
     const [favorite, setFavorite] = useState('');
-    const { setContacts } = useContext(ContactContext);
+    const { contacts, setContacts } = useContext(ContactContext);
 
     function handleName(e) {
         setName(e.target.value);

@@ -12,6 +12,7 @@ function Favorites() {
         <div>
             <main>
                 <h1>Favorites</h1>
+                <em>Favorite contacts are listed in blue</em>
                 <div>
                     {contacts.filter(contact => contact.favorite)
                     .map(contact => {

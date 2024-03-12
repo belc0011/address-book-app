@@ -11,6 +11,8 @@ function AddressBook( ) {
         <div>
             <main>
                 <h1>Address Book</h1>
+                <h2 id="main-heading">Hello! All of your contacts are listed below.</h2>
+                <em>Favorite contacts are listed in blue</em>
                 {contacts.map(contact => {
                     return (
                         <ContactCard name={contact.name} phone={contact.phone} nickname={contact.nickname} favorite={contact.favorite} key={contact.id} group={contact.group}/>

@@ -28,3 +28,21 @@ code {
 .active {
   color: red;
 }
+
+h1{text-align: center}
+
+h3{color: blue}
+
+#main-heading{text-align: center}
+
+.parent {
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+.child {
+  display: inline-block;
+  padding: 1rem 1rem;
+  vertical-align: top;
+}

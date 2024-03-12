@@ -9,9 +9,10 @@ function Groups() {
     return (
         <div>
             <main>
-                <h1>Groups</h1>
+                <h1 className="parent">Groups</h1>
+                <em>Favorite contacts are listed in blue</em>
+                <div className="child">
                 <h2>Family</h2>
-                <div>
                     {contacts.filter(contact => contact.group === "family")
                     .map(contact => {
                         return (
@@ -19,8 +20,8 @@ function Groups() {
                         )
                     })}
                 </div>
+                <div className="child">
                 <h2>Co-Workers</h2>
-                <div>
                     {contacts.filter(contact => contact.group === "coworkers")
                   .map(contact => {
                     return (
@@ -28,8 +29,8 @@ function Groups() {
                     )
                 })}
                 </div>
+                <div className="child">
                 <h2>In-Laws</h2>
-                <div>
                     {contacts.filter(contact => contact.group === "in-laws")
                 .map(contact => {
                     return (
@@ -37,8 +38,8 @@ function Groups() {
                     )
                 })}
                 </div>
+                <div className="child">
                 <h2>Friends</h2>
-                <div>
                     {contacts.filter(contact => contact.group === "friends")
                     .map(contact => {
                         return (
