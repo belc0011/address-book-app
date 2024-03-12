@@ -32,6 +32,10 @@ function Form() {
         setFavorite(e.target.value);
     }
 
+    function addContact(newContact) {
+        setContacts([...contacts, newContact]);
+    }
+
     function handleSubmit(e) {
         const newContact = {
             name: name,
@@ -49,7 +53,7 @@ function Form() {
             body: JSON.stringify(newContact)
         })
         .then(res => res.json())
-        .then(data => setContacts(data))
+        .then(data => addContact(data))
         setName('');
         setPhone('');
         setNickname('');
