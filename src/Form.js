@@ -50,7 +50,11 @@ function Form() {
         })
         .then(res => res.json())
         .then(data => console.log(data))
-        e.target.reset();
+        setName('');
+        setPhone('');
+        setNickname('');
+        setGroup('');
+        setFavorite('');
         alert('Contact added!');
     }
     return (
@@ -59,19 +63,19 @@ function Form() {
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="name">Name</label>
                     <div>
-                        <input type="text" placeholder="New contact name" id="name" onChange={handleName}/>
+                        <input type="text" placeholder="New contact name" id="name" value={name} onChange={handleName}/>
                     </div>
                     <label htmlFor="phone">Phone</label>
                     <div>
-                        <input type="text" placeholder="New contact phone" onChange={handlePhone}/>
+                        <input type="text" placeholder="New contact phone" value={phone} onChange={handlePhone}/>
                     </div>
                     <label htmlFor="nickname">Nickname</label>
                     <div>
-                        <input type="text" placeholder="Nickname" onChange={handleNickname}/>
+                        <input type="text" placeholder="Nickname" value={nickname} onChange={handleNickname}/>
                     </div>
                     <label htmlFor="group">Group</label>
                     <div>
-                        <select type="dropdown" id="group" onChange={handleGroup}>
+                        <select type="dropdown" id="group" value={group} onChange={handleGroup}>
                             <option value="default">Select One</option>
                             <option value="friends">Friends</option>
                             <option value="family">Family</option>
