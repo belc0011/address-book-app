@@ -49,7 +49,7 @@ function Form() {
             body: JSON.stringify(newContact)
         })
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => setContacts(data))
         setName('');
         setPhone('');
         setNickname('');
