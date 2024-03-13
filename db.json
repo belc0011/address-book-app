@@ -93,7 +93,7 @@
       "phone": "480-000-1112",
       "nickname": "Alg 2 Coworker",
       "group": "coworkers",
-      "favorite": "false",
+      "favorite": true,
       "id": 12
     },
     {
@@ -101,7 +101,7 @@
       "phone": "970-111-2222",
       "nickname": "Joe",
       "group": "in-laws",
-      "favorite": "false",
+      "favorite": false,
       "id": 13
     },
     {
@@ -109,7 +109,7 @@
       "phone": "970-222-3333",
       "nickname": "Sue",
       "group": "in-laws",
-      "favorite": "false",
+      "favorite": false,
       "id": 14
     },
     {
@@ -117,7 +117,7 @@
       "phone": "480-777-7777",
       "nickname": "Kristen",
       "group": "friends",
-      "favorite": "false",
+      "favorite": false,
       "id": 15
     },
     {
@@ -125,8 +125,24 @@
       "phone": "970-555-5555",
       "nickname": "Amy",
       "group": "in-laws",
-      "favorite": "false",
+      "favorite": false,
       "id": 16
+    },
+    {
+      "name": "Heather Davis",
+      "phone": "313-690-2178",
+      "nickname": "Drew's Mom",
+      "group": "friends",
+      "favorite": true,
+      "id": 17
+    },
+    {
+      "name": "Daniel Krieger",
+      "phone": "616-792-8888",
+      "nickname": "Dan",
+      "group": "in-laws",
+      "favorite": false,
+      "id": 18
     }
   ]
 }

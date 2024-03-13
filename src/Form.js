@@ -29,7 +29,14 @@ function Form() {
     }
 
     function handleFavorite(e) {
-        setFavorite(e.target.value);
+        let favoriteBoolean
+        if (e.target.value === 'true') {
+            favoriteBoolean = true;
+        }
+        else {
+            favoriteBoolean = false;
+        }
+        setFavorite(favoriteBoolean);
     }
 
     function addContact(newContact) {
@@ -72,11 +79,11 @@ function Form() {
                     </div>
                     <label htmlFor="phone">Phone</label>
                     <div>
-                        <input type="text" placeholder="New contact phone" value={phone} onChange={handlePhone}/>
+                        <input type="text" placeholder="New contact phone" id="phone" value={phone} onChange={handlePhone}/>
                     </div>
                     <label htmlFor="nickname">Nickname</label>
                     <div>
-                        <input type="text" placeholder="Nickname" value={nickname} onChange={handleNickname}/>
+                        <input type="text" placeholder="Nickname" id="nickname" value={nickname} onChange={handleNickname}/>
                     </div>
                     <label htmlFor="group">Group</label>
                     <div>
