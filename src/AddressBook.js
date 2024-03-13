@@ -1,12 +1,11 @@
 import React from "react";
-import { useState, useEffect, useContext } from "react";
+import { useContext } from "react";
 import ContactCard from "./ContactCard.js";
-import NavBar from "./NavBar.js";
 import { ContactContext } from "./MyContext.js";
 
 function AddressBook( ) {
     const { contacts } = useContext(ContactContext);
-    console.log(contacts);
+    
     return (
         <div>
             <main>

@@ -1,6 +1,5 @@
 import React from 'react';
-import NavBar from './NavBar';
-import { useEffect, useState, useContext} from'react';
+import { useContext} from'react';
 import ContactCard from './ContactCard';
 import { ContactContext } from "./MyContext.js";
 

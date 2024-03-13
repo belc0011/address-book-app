@@ -1,7 +1,5 @@
 import React from 'react';
-import NavBar from './NavBar';
-import { useEffect, useState, useContext} from'react';
-import ContactCard from './ContactCard';
+import { useState, useContext} from'react';
 import { ContactContext } from "./MyContext.js";
 
 function Form() {

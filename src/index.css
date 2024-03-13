@@ -58,14 +58,7 @@ form label {
 }
 
 form textarea {
-  width: 100%; /* Make input fields and textarea full width */
-  padding: 8px; /* Add padding to input fields and textarea */
-  margin-bottom: 15px; /* Add margin between each input field and the next element */
-}
-
-form input[type="submit"] {
-  width: auto; /* Make submit button width auto to fit content */
-  padding: 10px 20px; /* Add padding to submit button */
-  margin-top: 15px; /* Add margin between last input field and submit button */
-  display: block; /* Ensure the button is displayed as a block element */
+  width: 100%; 
+  padding: 8px; 
+  margin-bottom: 15px; 
 }
