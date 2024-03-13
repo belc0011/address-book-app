@@ -16,3 +16,4 @@ For ongoing development of this app I plan to implement the following improvemen
 * Add a search functionality to pull up a specific contact, either by name or by nickname
 * Allow the user to create a new group title rather than placing contacts that don't fit into an existing category in "other"
 * Include input fields for additional contact information such as address and e-mail address
+* Include the option to delete contacts
