@@ -62,8 +62,8 @@ function Form() {
         setName('');
         setPhone('');
         setNickname('');
-        setGroup('');
-        setFavorite('');
+        setGroup('default');
+        setFavorite('default');
         alert('Contact added!');
     }
     return (
@@ -96,7 +96,7 @@ function Form() {
                     </div>
                     <label htmlFor="favorite">Favorite?</label>
                     <div>
-                    <select type="dropdown" id="favorite" onChange={handleFavorite}>
+                    <select type="dropdown" id="favorite" value={favorite} onChange={handleFavorite}>
                         <option value="default">Select One</option>
                         <option value="true">Yes</option>
                         <option value="false">No</option>
